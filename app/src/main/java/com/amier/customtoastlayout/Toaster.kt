@@ -1,24 +1,28 @@
 package com.amier.customtoastlayout
 
 import android.content.Context
-import android.view.Gravity
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.content.res.Resources
+import android.content.res.XmlResourceParser
+import android.view.*
 import android.widget.Toast
+import androidx.core.view.ViewGroupCompat
 
 class Toaster {
-    fun make(context: Context, idReslayout: Int, Toastduration: Int): Toast {
-        val v = idReslayout as View
-        val viewgroup = v.parent as ViewGroup
-        val layout = LayoutInflater.from(context).inflate(idReslayout, viewgroup)
+    companion object {
+        fun make(context: Context, idReslayout: Int, viewGroup:ViewGroup, Toastduration: Int): Toast {
+            val vs = context.resources.getLayout(idReslayout)
+//            val vg = context.resources.v
+            val layout = LayoutInflater.from(context).inflate(vs,viewGroup,false)
 
-        val toast = Toast(context.applicationContext)
-        toast.apply {
-            setGravity(Gravity.BOTTOM, 0, 0)
-            view = layout
-            duration = Toastduration
+            val toast = Toast(context.applicationContext)
+            toast.apply {
+                setGravity(Gravity.BOTTOM, 0, 0)
+                view = layout
+                duration = Toastduration
+                show()
+            }
+            return toast
         }
-        return toast
     }
 }
+

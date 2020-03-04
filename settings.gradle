@@ -1,2 +1,3 @@
 rootProject.name='CustomToastLayout'
 include ':app'
+include ':sample'
