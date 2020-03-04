@@ -15,7 +15,6 @@ This is a simple to use layout as a toast
 - ## Step 1
 	- ### Prerequired
 	Add it in your root/project level `build.gradle` at the end of repositories:
-
 		```
 		allprojects {
 			repositories {
@@ -26,7 +25,6 @@ This is a simple to use layout as a toast
 		```
 	- ### Add the Dependency
 	Add this to your app level  `build.gradle` file
-
 		```
 		dependencies {
 		        implementation 'com.github.4mirfor3v3r:Toaster:1.0.0'
@@ -107,9 +105,9 @@ Just contact me.
 
 ### Find Me
 
-- #####[Github](https://github.com/4mirfor3v3r)
-- #####[LinkedIn](https://www.linkedin.com/in/4mirfor3v3r/)
-- #####[Facebook](https://www.facebook.com/achmad.snesma)
+- ##### [Github](https://github.com/4mirfor3v3r)
+- ##### [LinkedIn](https://www.linkedin.com/in/4mirfor3v3r/)
+- ##### [Facebook](https://www.facebook.com/achmad.snesma)
 
 # If this is usefully you can place star in the top right
 Thanks for reading :)
