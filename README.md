@@ -15,20 +15,26 @@ This is a simple to use layout as a toast
 - ## Step 1
 	- ### Prerequired
 	Add it in your root/project level `build.gradle` at the end of repositories:
+	
 		```
+		
 		allprojects {
 			repositories {
 				...
 				maven { url "https://jitpack.io" }
 			}
 		}
+		
 		```
 	- ### Add the Dependency
 	Add this to your app level  `build.gradle` file
+	
 		```
+		
 		dependencies {
 		        implementation 'com.github.4mirfor3v3r:Toaster:1.0.0'
 		}
+		
 		```
 
 - ## Step 2 (Lets' Code)
