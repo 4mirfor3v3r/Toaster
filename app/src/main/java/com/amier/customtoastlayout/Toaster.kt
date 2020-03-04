@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 
-class CustomToast {
+class Toaster {
     fun make(context: Context, idReslayout: Int, Toastduration: Int): Toast {
         val v = idReslayout as View
         val viewgroup = v.parent as ViewGroup
